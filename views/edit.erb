@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <div class="row d-flex justify-content-center">
+        <div class="col-6">
+            <form action="/<%= @name %>" method="post">
+                <h2>Editar taller de <%= @name %></h2>
+                <input type="hidden" class="form-control" name="_method" value="put">
+                <div class="mb-3">
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea class="form-control" name="description" id="description" rows="3">
+                        <%= @description %>
+                    </textarea>
+                </div>
+                <input type="submit" name="delete" class="btn btn-primary" value="Editar Taller">
+            </form>
+        </div>
+    </div>
+</div>

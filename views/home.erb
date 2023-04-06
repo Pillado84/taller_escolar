@@ -1,0 +1,12 @@
+<div class="container mt-4">
+    <div class="row d-flex justify-content-center">
+        <div class="col-6">
+          <div class="list-group">
+            <% @files.drop(2).each do |file_name| %>
+              <a href="/<%= File.basename(file_name, '.*') %>" class="list-group-item list-group-item-action"><%= File.basename(file_name, '.*') %></a>
+            <% end %>
+            <a href="/create" class="btn btn-primary mt-4 w-25">Nuevo Taller</a>
+          </div>
+        </div>
+    </div>
+</div>

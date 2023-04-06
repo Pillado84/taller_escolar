@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12"><h2>Taller de <%= @name %></h2></div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p><%= @description %></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex">
+            <form action="/<%= @name %>" method="post">
+                <input type="hidden" name="_method" value="delete">
+                <input type="submit" class="btn btn-danger" name="delete" value="Borrar Taller">
+            </form>
+            <a href="/<%= @name %>/edit" class="btn btn-primary ms-4">Editar Taller</a>
+        </div>
+    </div>    
+</div>
